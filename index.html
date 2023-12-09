@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body">
+ <div class="main">
+  <div class="cal-top-head">
+    <p id="calc">Calc.</p>
+    <div class="theme-toggle">
+      <p id="theme">THEME</p>
+      <div class="change-theme">
+        <span onclick="theme_one()" id="one"></span>
+        <span onclick="theme_two()" id="two"></span>
+        <span onclick="theme_three()" id="three"></span>
+      </div>
+    </div>
+  </div>
+  <div class="calculator">
+    <div class="text" id="text"></div>
+    <div class="num-btn" id="num-btn">
+      <div class="line-one">
+        <span class="btn">7</span>
+        <span class="btn">8</span>
+        <span class="btn">9</span>
+        <span class="btn" id="del">DEL</span>
+      </div>
+      <div class="line-one">
+        <span class="btn">4</span>
+        <span class="btn">5</span>
+        <span class="btn">6</span>
+        <span class="btn">+</span>
+      </div>
+      <div class="line-one">
+        <span class="btn">1</span>
+        <span class="btn">2</span>
+        <span class="btn">3</span>
+        <span class="btn" id="minus">-</span>
+      </div>
+      <div class="line-one">
+        <span class="btn" id="dot">.</span>
+        <span class="btn">0</span>
+        <span class="btn">/</span>
+        <span class="btn">*</span>
+      </div>
+      <div class="line-one">
+        <span class="btn" id="reset">RESET</span>
+        <span class="btn" id="equal">=</span>
+      </div>
+    </div>
+  </div>
+ </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rahul Barnwal</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
